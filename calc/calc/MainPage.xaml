@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calc.MainPage">
+
+    <StackLayout Background="PeachPuff">
+        <Grid BackgroundColor="PeachPuff">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Label Text="{Binding promejnumb}" Grid.Row="0" FontSize="45" HorizontalOptions="Start" Padding="20" VerticalOptions="End" TextColor="Gray" HeightRequest="250" VerticalTextAlignment="End" />
+            <Label Text="{Binding firstnumb}" HorizontalOptions="End" Grid.Row="0" FontSize="45" Padding="20" VerticalOptions="End" TextColor="Black" HeightRequest="330" VerticalTextAlignment="End"/>
+            <Label Text="{Binding finalnumb}" Grid.Row="0" FontSize="45" HorizontalOptions="Start" Padding="20" VerticalOptions="End" TextColor="White" HeightRequest="250" VerticalTextAlignment="End" />
+        </Grid>
+
+        <Grid Margin="0, -100, 0, 0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Text="7" Grid.Row="2" Grid.Column="0" BackgroundColor="DarkGray" TextColor="White" FontSize="36" BorderWidth="1" CornerRadius="40" Clicked="Seven"/>
+            <Button Text="8" Grid.Row="2" Grid.Column="1" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="Eight"/>
+            <Button Text="9" Grid.Row="2" Grid.Column="2" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="Nine"/>
+            <Button Text="4" Grid.Row="3" Grid.Column="0" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="Four"/>
+            <Button Text="5" Grid.Row="3" Grid.Column="1" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="Five"/>
+            <Button Text="6" Grid.Row="3" Grid.Column="2" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="Six"/>
+            <Button Text="1" Grid.Row="4" Grid.Column="0" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="One"/>
+            <Button Text="." Grid.Row="5" Grid.Column="2" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="tochka"/>
+            <Button Text="2" Grid.Row="4" Grid.Column="1" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="Two"/>
+            <Button Text="3" Grid.Row="4" Grid.Column="2" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="Three"/>
+            <Button Text="0" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="DarkGray" TextColor="White" FontSize="40" CornerRadius="40" BorderWidth="1" Clicked="Zero"/>
+            <Button Text="/" Grid.Row="2" Grid.Column="3" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="delenie"/>
+            <Button Text="*" Grid.Row="3" Grid.Column="3" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="ymnoj"/>
+            <Button Text="-" Grid.Row="4" Grid.Column="3" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="minuss"/>
+            <Button Text="+" Grid.Row="5" Grid.Column="3" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="pluss"/>
+            <Button Text="C" Grid.Row="1" Grid.Column="2" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="C"/>
+            <Button Text="=" Grid.Row="4" Grid.Column="4" Grid.RowSpan="2" BackgroundColor="DarkGray" TextColor="White" FontSize="36" CornerRadius="40" BorderWidth="1" Clicked="ravno"/>
+            <Button Text="1/x" Grid.Row="3" Grid.Column="4" BackgroundColor="DarkGray" TextColor="White" FontSize="25" BorderWidth="1" CornerRadius="40" Clicked="recip"/>
+            <Button Text="CE" Grid.Row="1" Grid.Column="1" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="CE"/>
+            <Button Text="%" Grid.Row="2" Grid.Column="4" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="procent"/>
+            <Button Text="±" Grid.Row="1" Grid.Column="3" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="pm"/>
+            <Button Text="√" Grid.Row="1" Grid.Column="4" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="koren"/>
+            <Button Text="←" Grid.Row="1" Grid.Column="0" BackgroundColor="DarkGray" TextColor="White" FontSize="40" BorderWidth="1" CornerRadius="40" Clicked="Backspace"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
